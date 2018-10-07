@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MS Dynamics CRM Application Test Automation Test Suite" parallel="false">
+    
+<!-- 	  <listeners>
+	        <listener class-name="com.framework.utils.RetryListenerClass"/>
+	        <listener class-name="com.framework.utils.ExtentReporterNG" />
+	  </listeners> 
+ -->	
+	 <test name="Regression Cases">	
+		<classes>
+			<class name="com.framework.FrameWorkSelenium.TestRunner">
+				<methods>
+        			<include name="test4" />
+        		</methods>
+        	</class>
+		</classes>
+	</test>	
+	
+</suite>
