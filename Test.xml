@@ -7,11 +7,16 @@
 	        <listener class-name="com.framework.utils.ExtentReporterNG" />
 	  </listeners> 
  -->	
+ 
+ 	<listeners>
+		<listener class-name="com.framework.utils.ExtentReporterNG" />
+	</listeners>
+ 
 	 <test name="Regression Cases">	
 		<classes>
 			<class name="com.framework.FrameWorkSelenium.TestRunner">
 				<methods>
-        			<include name="test4" />
+        			<include name="validateShortcuts" />
         		</methods>
         	</class>
 		</classes>

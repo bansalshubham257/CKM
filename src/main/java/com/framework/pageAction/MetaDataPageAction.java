@@ -10,6 +10,7 @@ public class MetaDataPageAction {
 
 	public void setTitle(String title) {
 		
+		TestBase.getElement(new MetaDataPage().tfTitle).clear();
 		TestBase.getElement(new MetaDataPage().tfTitle).sendKeys(title);
 	}
 	

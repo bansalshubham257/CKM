@@ -9,6 +9,8 @@ public class UploadPresentation {
 
 	public static void loadPresentation(String presentationName) {
 		
+		Wait.waitElementToBeClickable(new UploadPresentationPage().btnBrowse, 10);
+		
 		UploadPresentationPageAction uploadPresentationPageAction = new UploadPresentationPageAction();
 		uploadPresentationPageAction.clickBrowse();
 
